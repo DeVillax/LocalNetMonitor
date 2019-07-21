@@ -10,10 +10,10 @@ class TestNotifications(unittest.TestCase):
 		pwd = ""
 		
 		if os.environ["EMAIL_DEVELOPMENT"]:
-			sender = os.environ.get("EMAIL_DEVELOPMENT")
+			sender = os.environ.get("SCANNER_EMAIL")
 			
 		if os.environ["EMAIL_KEY"]:
-			pwd = os.environ.get("EMAIL_KEY")
+			pwd = os.environ.get("SCANNER_KEY")
 			
 		self.email = Email(587, "smtp.gmail.com", sender, pwd)
 		self.subject = "Test"
@@ -24,7 +24,7 @@ class TestNotifications(unittest.TestCase):
 		Test if emails are sent. If the server doesn't report an error, this
 		case is considered successful.
 		"""
-		recipient = "testingdevelopmentemail@gmail.com"
+		recipient = ""
 		self.email.send_email(self.subject, recipient, self.content)
 
 
