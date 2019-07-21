@@ -26,6 +26,11 @@ Either:
 
 Congratulations! All set to run it ;)
 
+## 5) Considerations
+As for now, the script is designed to work with gmail address as a sender only. In order for the script to connect to your account, "Less secure apps access" needs to be on. 
+
+For further information about this, please visit Google's documentation: https://support.google.com/accounts/answer/6010255?hl=en
+
 ## 4) Development environment
 
 * Python 3.5
