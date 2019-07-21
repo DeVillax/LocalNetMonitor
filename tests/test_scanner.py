@@ -41,7 +41,7 @@ class TestScanner(unittest.TestCase):
 		This test passes if the notification is successfully sent.
 		"""
 		subject = "Test"
-		recipient = "testingdevelopmentemail@gmail.com"
+		recipient = ""
 		content = "test2"
 		notification(subject, recipient, content)
 
