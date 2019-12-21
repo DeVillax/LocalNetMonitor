@@ -1,4 +1,4 @@
-# Monitor-Your-Network
+# Monitor Your Local Network
 
 Simple script for discovering host on your network and notifiying via email when new devices have connected to, reconnected to or left it.
 
